@@ -12,8 +12,8 @@ public class Main {
         while (totalDeposit < 2_459_000) {
             totalDeposit = totalDeposit + deposit;
             month = month + 1;
+            System.out.println("Месяц " + month + ", сумма накоплений равна " + totalDeposit + " рублей");
         }
-        System.out.println("Месяц " + month + ", сумма накоплений равна " + totalDeposit + " рублей");
 
 //        Task 2
         System.out.println();
@@ -77,17 +77,13 @@ public class Main {
         System.out.println();
         System.out.println("          Задача №7");
         int friday = 3;
+        int x = 0;
         do {
-            System.out.println("Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет.");
+            x = x + 1;
+            System.out.println("Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет. " + "Количество итераций " + x);
             friday = friday + 7;
         } while (friday <= 31);
-//      Альтернативный через for
-//        for (int i = 1; i <= 31; i++) {
-//            if (i == friday) {
-//                friday = friday + 7;
-//                System.out.println("Сегодня пятница, " + i + "-е число. Необходимо подготовить отчет.");
-//            }
-//        }
+
 
         //        Task 8
         System.out.println();
